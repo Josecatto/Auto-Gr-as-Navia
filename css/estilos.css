@@ -286,3 +286,18 @@ h2 {
     margin: 0 auto;     /* centra el carrusel */
     padding: 10px 0;
 }
+/* ===============================
+   FIX PORTAFOLIO EN MÓVIL
+   (NO CORTA LAS IMÁGENES)
+================================ */
+@media (max-width: 768px) {
+
+    .portafolio-carrusel img {
+        width: 100%;          /* una imagen visible */
+        height: auto;         /* 🔥 no fuerza altura */
+        aspect-ratio: 16 / 9; /* 🔥 formato horizontal */
+        object-fit: contain;  /* 🔥 no recorta */
+        background-color: #000;
+    }
+
+}
